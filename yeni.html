@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DELICIOUS RECİPES</title>
+    <link rel="javacript" href="yeni.js">
+    <link rel="stylesheet" href="yeni.css">
+    <link rel="stylesheet" href="/recipes/soup.html">
+    
+    
+  <!--bootsrtap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+     <!--menü başlangıç -->
+     <nav class="navbar navbar-expand-lg navbar-dark  bg-dark fixed-top ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">DELICIOUS RECIPES</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#carouselExample">HOME</a>  <!--basınca gitmesi için hashtagin için yazdık-->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT</a>
+           
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">GALLERY</a>
+              </li>
+              
+
+              <!--aşağıdaki kodda menüdeki seçeneklerin alt alta görünmesini sağlar-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              RECİPES
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="soup.html"  >SOUP</a></li>
+                <li><a class="dropdown-item" href="pasta.html" >PASTA AND RICE</a></li>
+                <li><a class="dropdown-item" href="rolls stuffed.html">ROLLS AND STUFFED</a></li>
+                <li><a class="dropdown-item" href="meat meal .html">MEAT MEAL</a></li>
+                <li><a class="dropdown-item" href="chicken meal .html">CHICKEN MEAL</a></li>
+                <li><a class="dropdown-item" href="salad.html">SALAD</a></li>
+                <li><a class="dropdown-item" href="dessert.html">DESSERT</a></li>
+                <li><a class="dropdown-item" href="vegetarian.html">VEGETARIAN</a></li>
+              
+              </ul>
+            </li>
+
+          
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
+              </li>
+              
+          </ul>
+
+
+          <!--tarih gsöterme-->
+          <p>Click the button to display the date.</p>
+          <button onclick="displayDate()">The time is?</button>
+          <script>
+            function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+            }
+            </script>
+         <p id="demo"></p>
+         <!--tarih bitiş-->
+
+          
+          
+
+
+
+
+          <input type="text" id="search-bar" placeholder="Search recipe">
+          <button id="searchButton">Search</button>
+      
+        </div>
+      </div>
+    </nav>
+    <!---slider-->
+    <div id="carouselExample" class="carousel slide"  >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Mantı2.jpg" class="d-block w-100 resimslider" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="et.jpg" class="d-block w-100 resimslider" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="kabak tatlısı.webp" class="d-block w-100 resimslider" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!--hakkımızda başlangıç-->
+    <section class="p-5 text-center about" id="about">
+      <div class="container">
+        <h2 class="mb-5 font-weight-bold">ABOUT</h2> <!--burası paraagrapın boşluğunu ayarlıyo ve yazıyı kalınlaştırıyo-->
+        <hr class="ayrac"> <!--alta çizgi koydu aboutun altına-->
+        <p> Welcome! Welcome to the meeting point of taste and elegance.</p>
+        <p> We are delighted to welcome you to the world of recipes. We are here with thousands of special recipes that will pamper your taste buds and enrich your culinary experiences. A world full of recipes that turn into visual feasts, where you can not only cook but also add color to your tables and impress your loved ones, awaits you. Start your culinary adventure with our recipes that will make every meal unforgettable and appeal to every taste. We are here to enjoy cooking and eating. </p>
+        <p>We wish you food!</p>
+      
+      </div>
+    </section>
+
+
+    <!--galeri başlangıç-->
+
+    
+    <div class="container mt-5" id="gallery">
+      <h2 class="text-center mb-4">GALLERY</h2>
+      <hr class="ayrac"> <!--alta çizgi koydu aboutun altına-->
+      <div class="row">
+        <div class="col-md-4 custom-col">
+        
+          <figure class="figure">
+            <a href="firinda-biber-dolmasi-onecikan-yeni.jpg">
+              <img src="firinda-biber-dolmasi-onecikan-yeni.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+            </a>
+          </figure>
+        </div>
+    
+        <div class="col-md-4 custom-col">
+          <figure class="figure">
+            <a href="içli köfte.jpg">
+              <img src="içli köfte.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+            </a>
+          </figure>
+        </div>
+    
+        <div class="col-md-4 custom-col">
+          <figure class="figure">
+            <a href="kestaneli-ic-pilav-sunum-yemekcom.jpg">
+              <img src="kestaneli-ic-pilav-sunum-yemekcom.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+            </a>
+          </figure>
+        </div>
+      </div>
+    
+      <div class="row mt-3 custom-col">
+        <div class="col-md-4">
+          <figure class="figure">
+            <a href="gavurdagi.webp">
+              <img src="gavurdagi.webp" class="figure-img img-fluid rounded shadow" alt="...">
+            </a>
+          </figure>
+        </div>
+    
+        <div class="col-md-4 custom-col">
+          <figure class="figure">
+            <a href="pideli-tavuk-guvec-t.jpg">
+              <img src="pideli-tavuk-guvec-t.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+            </a>
+          </figure>
+        </div>
+    
+        <div class="col-md-4 custom-col">
+          <figure class="figure">
+            <a href="salcali-makarna-f60e9ce7-6ad0-49ab-8dae-a3f6aa385734.jpg">
+              <img src="salcali-makarna-f60e9ce7-6ad0-49ab-8dae-a3f6aa385734.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+            </a>
+          </figure>
+        </div>
+      </div>
+    
+      <div class="row mt-3 custom-col">
+        <div class="col-md-4">
+          <figure class="figure">
+            <a href="tavuklu-cokertme-kebabi-t.jpg">
+              <img src="tavuklu-cokertme-kebabi-t.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+            </a>
+          </figure>
+        </div>
+    
+        <div class="col-md-4 custom-col">
+          <figure class="figure">
+            <a href="yag-yakici-domates-corbasi-tarifi.jpg">
+              <img src="yag-yakici-domates-corbasi-tarifi.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+            </a>
+          </figure>
+        </div>
+    
+        <div class="col-md-4 custom-col">
+          <figure class="figure">
+            <a href="kiymali-pide.jpg">
+              <img src="kiymali-pide.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+            </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+<!--galeri bitis-->
+
+<!---send recipe form başlangıç-->
+    
+<title>SEND RECIPE FORM</title>
+    <div class="container" id="contact">
+        <h2 class="mb-5 font-weight-bold">SEND RECIPE FORM</h2> <!--burası paraagrapın boşluğunu ayarlıyo ve yazıyı kalınlaştırıyo-->
+        <hr class="ayrac"> <!--alta çizgi koydu aboutun altına-->
+        <form id="SendRecipeForm" onsubmit="submitForm(event)">
+          <form id="myForm" action="/submit" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+    
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+    
+          <button type="submit" onclick="submitForm()">Send</button>
+        </form>
+       
+      </div>
+      <script>
+      function submitForm() {
+        // formunuzu göndermeden önce veya sonra istediğiniz işlemleri yapabilirsiniz
+        alert("Your form has been sent successfully!");
+    }
+       </script>
+
+<!--form bitiş-->
+
+
+
+<!--iletişim başlangıç-->
+
+      <section class="p-5 text-center about" id="Contact">
+        <div class="container">
+          <h2 class="mb-5 font-weight-bold">CONTACT</h2> <!--burası paraagrapın boşluğunu ayarlıyo ve yazıyı kalınlaştırıyo-->
+          <hr class="ayrac"> <!--alta çizgi koydu aboutun altına-->
+          
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5803.519710430431!2d5.425359!3d43.340214!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bf7c61e192a1%3A0xbd255ff092316fd7!2sFOOD%20COMPANY!5e0!3m2!1str!2str!4v1704454945230!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+                <li> E-mail: <a href="deliciousrecipe">deliciousrecipe@gmail.com</a></li>
+                <li> Instagram: <a href="https://www.deliciousrecipe" target="_blank">https://www.deliciousrecipe </a></li>
+                <li> Number: +33491522788 </li>
+                <li> Address: 52 Chem. Notre Dame de la Consolation, 13013 Marseille, Fransa </a></li>
+         
+<!--letişim bitiş-->
+
+
+
+
+
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
